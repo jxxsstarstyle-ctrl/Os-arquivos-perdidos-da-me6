@@ -19,6 +19,11 @@ Se o site "publica" mas parece não mudar, siga este checklist simples:
    - `src/main.jsx` usa `HashRouter`.
    - `vite.config.js` usa `base: '/Os-arquivos-perdidos-da-me6/'`.
 
+
+6. **Fallback 404 dentro do `dist`**
+   - O arquivo de fallback precisa estar em `public/404.html` (não só na raiz do repo).
+   - Assim o Vite inclui o 404 no build e o GitHub Pages consegue redirecionar refresh/F5 para `#/...`.
+
 ## Quando o GitHub disser "This branch has conflicts"
 
 Se você não programa, use este fluxo simples:
