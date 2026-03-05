@@ -1,35 +1,31 @@
-
 :root {
   --sans-font: 'Inter', system-ui, sans-serif;
   --mono-font: 'Share Tech Mono', monospace;
 
-  /* Neon mint theme - v0.0.2 alpha */
-  --bg: #020a0a;
-  --bg-soft: #041414;
-  --panel: rgba(2, 22, 22, 0.84);
+  --bg0: #080308;
+  --bg1: #060206;
+  --bg2: #0c0208;
+  --bg3: #0d0408;
+  --bg4: #1a0508;
 
-  --line: rgba(0, 255, 200, 0.16);
-  --line-strong: rgba(0, 255, 200, 0.33);
+  --surface: #0c0208;
+  --surface-soft: #13040a;
 
-  --text: #eafffb;
-  --muted: rgba(169, 255, 241, 0.68);
-  --muted-soft: rgba(169, 255, 241, 0.52);
+  --text: #fff7f2;
+  --muted: rgba(255, 160, 100, 0.75);
+  --muted-soft: rgba(255, 160, 100, 0.6);
 
-  --accent: #00ffc8;
-  --accent-2: #44ffe2;
-  --accent-3: #7dff5f;
-  --accent-hover: #61ffe0;
+  --accent: #8b2500;
+  --accent-hover: #c03a00;
+  --accent-bright: #ff6020;
+  --pink: #ff3060;
+  --violet: #c040ff;
 
-  --border: rgba(0, 255, 200, 0.22);
-  --border-strong: rgba(0, 255, 200, 0.44);
-  --glow: rgba(0, 255, 200, 0.38);
+  --border: rgba(255, 100, 30, 0.15);
+  --border-strong: rgba(255, 80, 30, 0.4);
+  --glow: rgba(255, 80, 30, 0.35);
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
 
-  --radius: 18px;
-  --container: 1200px;
-  --shadow: 0 26px 70px rgba(0, 0, 0, 0.52);
-
-  --background: var(--bg);
-  --surface: rgba(255, 255, 255, 0.02);
-  --accent2: var(--accent-2);
-  --accent3: var(--accent-3);
+  --radius: 14px;
+  --container: 1160px;
 }

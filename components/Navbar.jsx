@@ -4,10 +4,9 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar-inner">
-        <Link to="/Home" className="brand-mark">NEXUS <span>MEGA 6</span></Link>
-        <span className="version-pill">0.0.2v alfa</span>
+        <Link to="/Home" className="brand-mark">SYS <span>MEGA 6</span></Link>
         <a href="https://neon-quest--juu98atlas.replit.app/" target="_blank" rel="noreferrer" className="nav-ext">AFTER.SERVER</a>
-        <nav className="nav-links" aria-label="Navegação principal">
+        <nav className="nav-links">
           <NavLink to="/Read">[ LER ]</NavLink>
           <NavLink to="/Buy">COMPRAR</NavLink>
         </nav>
