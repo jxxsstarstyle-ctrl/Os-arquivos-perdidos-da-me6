@@ -2,34 +2,30 @@
   --sans-font: 'Inter', system-ui, sans-serif;
   --mono-font: 'Share Tech Mono', monospace;
 
-  /* Base44 / Mega6 palette */
-  --bg: #080308;
-  --bg-soft: #0d0408;
-  --panel: rgba(8, 3, 8, 0.86);
+  --bg0: #080308;
+  --bg1: #060206;
+  --bg2: #0c0208;
+  --bg3: #0d0408;
+  --bg4: #1a0508;
 
-  --line: rgba(255, 80, 30, 0.15);
-  --line-strong: rgba(255, 80, 30, 0.30);
+  --surface: #0c0208;
+  --surface-soft: #13040a;
 
-  --text: #ffffff;
-  --muted: rgba(255, 180, 130, 0.55);
-  --muted-soft: rgba(255, 180, 130, 0.45);
+  --text: #fff7f2;
+  --muted: rgba(255, 160, 100, 0.75);
+  --muted-soft: rgba(255, 160, 100, 0.6);
 
-  --accent: #ff6020;
-  --accent-2: #ff3060;
-  --accent-3: #c040ff;
-  --accent-hover: #ff7a46;
+  --accent: #8b2500;
+  --accent-hover: #c03a00;
+  --accent-bright: #ff6020;
+  --pink: #ff3060;
+  --violet: #c040ff;
 
-  --border: rgba(255, 80, 30, 0.18);
-  --border-strong: rgba(255, 80, 30, 0.36);
-  --glow: rgba(255, 80, 30, 0.34);
-
-  --radius: 16px;
-  --container: 1160px;
+  --border: rgba(255, 100, 30, 0.15);
+  --border-strong: rgba(255, 80, 30, 0.4);
+  --glow: rgba(255, 80, 30, 0.35);
   --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
 
-  /* aliases used by current code */
-  --background: var(--bg);
-  --surface: rgba(255, 255, 255, 0.02);
-  --accent2: var(--accent-2);
-  --accent3: var(--accent-3);
+  --radius: 14px;
+  --container: 1160px;
 }
