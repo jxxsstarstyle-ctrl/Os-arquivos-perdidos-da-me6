@@ -1,0 +1,24 @@
+:root {
+  --sans-font: 'Inter', system-ui, sans-serif;
+  --mono-font: 'Share Tech Mono', monospace;
+
+  --background: #080308;
+  --surface: rgba(255, 255, 255, 0.02);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 180, 130, 0.55);
+  --muted-soft: rgba(255, 180, 130, 0.45);
+
+  --accent: #ff6020;
+  --accent2: #ff3060;
+  --accent3: #c040ff;
+  --accent-hover: #ff7a46;
+
+  --border: rgba(255, 80, 30, 0.18);
+  --border-strong: rgba(255, 80, 30, 0.36);
+  --glow: rgba(255, 80, 30, 0.34);
+
+  --radius: 14px;
+  --container: 1160px;
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}
