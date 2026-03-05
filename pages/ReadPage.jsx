@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Section from '../components/Section';
 
 const sections = [
   ['Prólogo', 'Páginas 1–8'],
@@ -13,33 +14,26 @@ const sections = [
 
 export default function ReadPage() {
   return (
-    <div className="stack">
-      <section className="panel">
+    <div className="stack-xl">
+      <Section>
         <Link to="/Home" className="back">← VOLTAR</Link>
-        <h1>OS ARQUIVOS PERDIDOS DA MEGA 6</h1>
-        <p>CAP. 01 · FILE_01_ALPHA</p>
-      </section>
+        <h1 className="page-title">OS ARQUIVOS PERDIDOS DA MEGA 6</h1>
+        <a href="/Buy" className="btn btn-ghost">COMPRAR COMPLETO</a>
+      </Section>
 
-      <section className="panel">
-        <h2>// ARQUIVOS</h2>
+      <Section subtitle="// ARQUIVOS" title="01 · A Era dos Fragmentos">
         <ul className="section-list">
           {sections.map(([name, pages]) => (
             <li key={name}><strong>{name}</strong><span>{pages}</span></li>
           ))}
         </ul>
-      </section>
+      </Section>
 
-      <section className="panel">
-        <h2>A Era dos Fragmentos · Prólogo</h2>
-        <p>
-          Acordei com a estranha sensação de estar suspenso entre mundos, como se minha consciência tivesse sido desligada do corpo e depositada dentro do corredor interminável da Mega 6.
-          Luzes pulsavam suavemente, refletindo sobre superfícies que pareciam vivas. Não havia portas tradicionais, apenas passagens de energia em um labirinto vivo.
-        </p>
-        <p>
-          Cada passo reverberava com fragmentos de memórias que não eram minhas, mas que eu sentia como se fossem. O lugar não parecia vazio: parecia atento, quase consciente.
-        </p>
+      <Section subtitle="CAP. 01 · FILE_01_ALPHA" title="Páginas 1–8 · A Era dos Fragmentos">
+        <p>Acordei com a estranha sensação de estar suspenso entre mundos, como se minha consciência tivesse sido desligada do corpo e depositada dentro do corredor interminável da Mega 6. Luzes pulsavam suavemente, refletindo sobre superfícies que pareciam vivas, ondulando como se respirassem.</p>
+        <p>Cada passo meu ecoava com fragmentos de memórias, lembranças de outros tempos e experiências que não eram minhas, mas que de algum modo eu sentia como se fossem.</p>
         <div className="pager"><button type="button">← ANTERIOR</button><span>1 / 8</span><button type="button">PRÓXIMO →</button></div>
-      </section>
+      </Section>
     </div>
   );
 }

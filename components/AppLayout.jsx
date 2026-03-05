@@ -1,16 +1,17 @@
 import { Outlet } from 'react-router-dom';
-import TopTicker from './TopTicker';
-import MainNav from './MainNav';
+import Ticker from './Ticker';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export default function AppLayout() {
   return (
-    <div>
-      <TopTicker />
-      <MainNav />
-      <main className="container">
+    <div className="app-shell">
+      <Ticker />
+      <Navbar />
+      <main className="container page-content">
         <Outlet />
       </main>
-      <footer className="footer">© 2026 Os Arquivos Perdidos da Mega 6 · Todos os direitos reservados</footer>
+      <Footer />
     </div>
   );
 }

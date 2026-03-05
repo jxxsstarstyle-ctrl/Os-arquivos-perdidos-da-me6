@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
-import { chapterButtons } from '../assets/content';
+import Hero from '../components/Hero';
+import Section from '../components/Section';
+import Card from '../components/Card';
+import { chapterButtons, franchiseLinks } from '../assets/content';
 
 const features = [
   ['◈', 'Mundo Vivo', 'A Mega 6 não é apenas um espaço digital — é um organismo consciente que respira, aprende e responde às suas escolhas.'],
@@ -10,28 +13,21 @@ const features = [
 
 export default function HomePage() {
   return (
-    <div className="stack">
-      <section className="hero panel">
-        <p className="tag">ARQUIVO CLASSIFICADO · MEGA 6 · SYS_ONLINE</p>
-        <h1>OS ARQUIVOS PERDIDOS DA <span>MEGA 6</span></h1>
-        <p>Um universo digital onde memórias pulsam, sombras têm consciência e cada escolha molda o destino de um mundo que respira.</p>
-        <div className="cta-row">
-          <Link to="/Read" className="cta">► LER AMOSTRA GRÁTIS</Link>
-          <Link to="/Buy" className="cta ghost">[ ADQUIRIR ARQUIVO ]</Link>
+    <div className="stack-xl">
+      <Hero />
+
+      <Section subtitle="// SOBRE O LIVRO" title="Entre no Universo">
+        <p className="lead">Uma ficção científica que explora os limites entre consciência humana e mundo digital, onde cada fragmento conta uma história e cada sombra tem intenção.</p>
+        <div className="grid two">
+          {features.map(([icon, title, desc]) => (
+            <Card key={title} icon={icon} title={title}>
+              <p>{desc}</p>
+            </Card>
+          ))}
         </div>
-      </section>
+      </Section>
 
-      <section className="grid two">
-        {features.map(([icon, title, desc]) => (
-          <article key={title} className="panel">
-            <h3>{icon} {title}</h3>
-            <p>{desc}</p>
-          </article>
-        ))}
-      </section>
-
-      <section className="panel">
-        <h2>// ARQUIVOS · Explore a Narrativa</h2>
+      <Section subtitle="// ARQUIVOS" title="Explore a Narrativa">
         <div className="chapter-grid">
           {chapterButtons.map((ch) => (
             <button key={ch.file} className="chapter-btn" type="button">
@@ -42,7 +38,26 @@ export default function HomePage() {
             </button>
           ))}
         </div>
-      </section>
+      </Section>
+
+      <Section subtitle="// FRANQUIA AFTER.SERVER" title="Universo Expandido">
+        <div className="grid three">
+          {franchiseLinks.slice(0, 3).map((item, idx) => (
+            <Card key={item.text} icon={['◉', '◈', '⬢'][idx]} title={item.text.split('—')[0].trim()} className="link-card">
+              <p>{item.text.split('—')[1]?.trim() || ''}</p>
+              <a href={item.url} target="_blank" rel="noreferrer" className="btn btn-inline">► ACESSAR</a>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section className="cta-banner" subtitle="SISTEMA DISPONÍVEL · UPLINK ATIVO" title="Pronto para entrar na Mega 6?">
+        <p>Mergulhe num universo onde cada fragmento conta uma história e cada passo define o destino de um mundo que respira.</p>
+        <div className="hero-ctas">
+          <Link to="/Buy" className="btn btn-primary">COMPRAR O LIVRO</Link>
+          <Link to="/Read" className="btn btn-ghost">[ LER GRÁTIS ]</Link>
+        </div>
+      </Section>
     </div>
   );
 }
