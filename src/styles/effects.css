@@ -35,12 +35,10 @@
   80% { transform: translate(.5px, 0); }
 }
 
-@keyframes riseIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+.cyber-border {
+  position: relative;
 }
 
-.cyber-border { position: relative; }
 .cyber-border::before {
   content: '';
   position: absolute;
@@ -62,8 +60,4 @@
   background-size: 36px 36px;
   opacity: .2;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

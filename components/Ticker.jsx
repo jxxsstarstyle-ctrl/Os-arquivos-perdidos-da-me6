@@ -5,7 +5,6 @@ export default function Ticker() {
   const line = [...franchiseLinks, ...franchiseLinks, ...franchiseLinks];
   return (
     <div className="ticker-shell" aria-label="franchise updates">
-      <span className="ticker-live mono">LIVE</span>
       <div className="ticker-track">
         {line.map((item, i) => {
           const internal = item.url.startsWith('/');
