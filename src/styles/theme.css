@@ -1,35 +1,31 @@
-
 :root {
   --sans-font: 'Inter', system-ui, sans-serif;
   --mono-font: 'Share Tech Mono', monospace;
 
-  /* Matte orange + summer pink */
-  --bg: #120909;
-  --bg-soft: #1a0e0e;
-  --panel: rgba(24, 12, 12, 0.84);
+  --bg0: #080308;
+  --bg1: #060206;
+  --bg2: #0c0208;
+  --bg3: #0d0408;
+  --bg4: #1a0508;
 
-  --line: rgba(214, 112, 74, 0.20);
-  --line-strong: rgba(255, 120, 84, 0.38);
+  --surface: #0c0208;
+  --surface-soft: #13040a;
 
-  --text: #fff4ef;
-  --muted: rgba(255, 192, 170, 0.74);
-  --muted-soft: rgba(255, 192, 170, 0.58);
+  --text: #fff7f2;
+  --muted: rgba(255, 160, 100, 0.75);
+  --muted-soft: rgba(255, 160, 100, 0.6);
 
-  --accent: #d87349;      /* laranja fosco */
-  --accent-2: #ff5f93;    /* rosa verão */
-  --accent-3: #ff8bb2;
-  --accent-hover: #f08c60;
+  --accent: #8b2500;
+  --accent-hover: #c03a00;
+  --accent-bright: #ff6020;
+  --pink: #ff3060;
+  --violet: #c040ff;
 
-  --border: rgba(216, 115, 73, 0.30);
-  --border-strong: rgba(255, 110, 150, 0.48);
-  --glow: rgba(255, 110, 150, 0.30);
+  --border: rgba(255, 100, 30, 0.15);
+  --border-strong: rgba(255, 80, 30, 0.4);
+  --glow: rgba(255, 80, 30, 0.35);
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
 
-  --radius: 18px;
-  --container: 1200px;
-  --shadow: 0 26px 72px rgba(0, 0, 0, 0.56);
-
-  --background: var(--bg);
-  --surface: rgba(255, 255, 255, 0.02);
-  --accent2: var(--accent-2);
-  --accent3: var(--accent-3);
+  --radius: 14px;
+  --container: 1160px;
 }
