@@ -1,0 +1,37 @@
+.ticker-shell { overflow: hidden; border-bottom: 1px solid var(--line); background: rgba(6, 10, 20, .95); }
+.ticker-track { display: flex; width: max-content; animation: tickerMove 45s linear infinite; }
+.ticker-item { white-space: nowrap; color: var(--muted); padding: .62rem 1rem; font-size: .86rem; }
+.ticker-item:hover { color: var(--accent); }
+@keyframes tickerMove { from { transform: translateX(0%); } to { transform: translateX(-33.333%); } }
+
+.navbar { position: sticky; top: 0; z-index: 50; background: rgba(5, 7, 13, .82); border-bottom: 1px solid var(--line); backdrop-filter: blur(8px); }
+.navbar-inner { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 1rem; padding: .8rem 1rem; }
+.brand-mark { font-size: 1.05rem; font-weight: 600; }
+.brand-mark span { color: var(--accent); }
+.nav-ext { color: var(--muted); font-size: .88rem; }
+.nav-ext:hover { color: var(--accent); }
+.nav-links { display: flex; gap: .5rem; }
+.nav-links a { border: 1px solid var(--line); border-radius: 10px; padding: .45rem .82rem; }
+.nav-links a:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+.nav-links .active { color: var(--accent); border-color: var(--accent); }
+
+.section { padding: 1.4rem; }
+.section-head h2 { margin: .2rem 0 1rem; font-size: clamp(1.45rem, 2.3vw, 2rem); }
+.section-subtitle { color: var(--muted); margin: 0; font-size: .86rem; }
+.grid { display: grid; gap: .85rem; }
+.grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+.footer { border-top: 1px solid var(--line); margin-top: 2rem; background: rgba(4,6,12,.9); }
+.footer-inner { padding: 1.4rem 1rem 2rem; text-align: center; color: var(--muted); font-size: .9rem; }
+.footer-links { display: flex; justify-content: center; gap: .9rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.footer-links a:hover { color: var(--accent); }
+
+@media (max-width: 1024px) {
+  .grid.three { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 768px) {
+  .navbar-inner { grid-template-columns: 1fr; justify-items: start; }
+  .grid.two, .grid.three { grid-template-columns: 1fr; }
+  .section { padding: 1.05rem; }
+}
