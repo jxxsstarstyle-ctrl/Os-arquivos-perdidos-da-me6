@@ -29,7 +29,7 @@ Se o site "publica" mas parece não mudar, siga este checklist simples:
 Se você não programa, use este fluxo simples:
 
 1. Abra o PR e clique em **Resolve conflicts**.
-2. Para estes arquivos do app (`index.html`, `404.html`, `src/main.jsx`, `src/styles/*`, `pages/*`, `components/*`), escolha **Incoming**.
+2. Para estes arquivos do app (`index.html`, `public/404.html`, `src/main.jsx`, `src/styles/*`, `pages/*`, `components/*`), escolha **Incoming**.
    - Motivo: aqui o "Incoming" é o pacote novo do app React + Vite com as correções de rota do Pages.
 3. Clique em **Mark as resolved** em cada arquivo.
 4. Clique em **Commit merge**.
