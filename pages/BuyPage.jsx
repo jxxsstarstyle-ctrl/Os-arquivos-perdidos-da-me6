@@ -11,17 +11,17 @@ const plans = [
 export default function BuyPage() {
   return (
     <div className="stack-xl">
-      <Section className="cyber-border">
+      <Section>
         <Link to="/Home" className="back">← VOLTAR</Link>
         <h1 className="page-title">OS ARQUIVOS PERDIDOS DA MEGA 6</h1>
         <Link to="/Read" className="btn btn-ghost">[ LER AMOSTRA ]</Link>
       </Section>
 
-      <Section subtitle="// ACESSO AO ARQUIVO" title="Escolha seu Nível de Acesso" className="cyber-border">
+      <Section subtitle="// ACESSO AO ARQUIVO" title="Escolha seu Nível de Acesso">
         <p className="lead">Entre no universo da Mega 6 e descubra os arquivos que nunca deveriam ter sido perdidos.</p>
         <div className="grid three">
           {plans.map(([code, tier, desc, price, benefits]) => (
-            <Card key={code} overline={code} title={tier} className="price-card corner-brackets">
+            <Card key={code} overline={code} title={tier} className="price-card">
               <p>{desc}</p>
               <p className="price">{price}</p>
               <ul>{benefits.map((b) => <li key={b}>◈ {b}</li>)}</ul>
