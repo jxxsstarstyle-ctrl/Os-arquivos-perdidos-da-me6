@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecionando…</title>
+    <script>
+      (function redirectToHashRoute() {
+        var base = '/Os-arquivos-perdidos-da-me6';
+        var l = window.location;
+
+        // When a direct refresh hits /Home, /Read or /Buy on Pages,
+        // force the canonical hash URL used by HashRouter.
+        var rawPath = l.pathname.indexOf(base) === 0 ? l.pathname.slice(base.length) : l.pathname;
+        var cleanPath = rawPath.replace(/^\/+|\/+$/g, '');
+        var target = cleanPath || 'Home';
+
+        l.replace(base + '/#/' + target + (l.search || ''));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
