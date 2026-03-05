@@ -40,3 +40,8 @@ Depois do merge:
 - Abra **Actions** e espere o workflow `Deploy Pages` terminar com `Success`.
 - Teste na URL com hash: `https://jxxsstarstyle-ctrl.github.io/Os-arquivos-perdidos-da-me6/#/Home`.
 - Se ainda aparecer versão antiga, abra em aba anônima e faça `Ctrl + F5`.
+
+
+7. **Acesso direto sem hash (`/Home`, `/Read`, `/Buy`)**
+   - Foram adicionadas páginas de redirecionamento em `public/Home/index.html`, `public/Read/index.html` e `public/Buy/index.html`.
+   - Se alguém abrir URL sem `#/` por engano, o site redireciona para a rota hash correta automaticamente.
