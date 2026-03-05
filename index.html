@@ -8,22 +8,7 @@
       name="description"
       content="Um universo digital onde memórias pulsam, sombras têm consciência e cada escolha molda o destino de um mundo que respira."
     />
-    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
-    <script>
-      (function ensureHashRouting() {
-        var base = '/Os-arquivos-perdidos-da-me6/';
-        var path = window.location.pathname;
-        var hash = window.location.hash;
-
-        if (!hash && path.indexOf(base) === 0) {
-          var subPath = path.slice(base.length);
-          if (subPath) {
-            var normalized = subPath.startsWith('/') ? subPath : '/' + subPath;
-            window.location.replace(base + '#' + normalized + window.location.search);
-          }
-        }
-      })();
-    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <div id="root"></div>
