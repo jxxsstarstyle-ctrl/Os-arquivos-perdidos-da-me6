@@ -1,0 +1,31 @@
+:root {
+  --sans-font: 'Inter', system-ui, sans-serif;
+  --mono-font: 'Share Tech Mono', monospace;
+
+  --bg0: #080308;
+  --bg1: #060206;
+  --bg2: #0c0208;
+  --bg3: #0d0408;
+  --bg4: #1a0508;
+
+  --surface: #0c0208;
+  --surface-soft: #13040a;
+
+  --text: #fff7f2;
+  --muted: rgba(255, 160, 100, 0.75);
+  --muted-soft: rgba(255, 160, 100, 0.6);
+
+  --accent: #8b2500;
+  --accent-hover: #c03a00;
+  --accent-bright: #ff6020;
+  --pink: #ff3060;
+  --violet: #c040ff;
+
+  --border: rgba(255, 100, 30, 0.15);
+  --border-strong: rgba(255, 80, 30, 0.4);
+  --glow: rgba(255, 80, 30, 0.35);
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+
+  --radius: 14px;
+  --container: 1160px;
+}
