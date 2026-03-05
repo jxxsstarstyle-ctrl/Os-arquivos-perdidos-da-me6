@@ -1,0 +1,35 @@
+
+:root {
+  --sans-font: 'Inter', system-ui, sans-serif;
+  --mono-font: 'Share Tech Mono', monospace;
+
+  /* Neon mint theme - v0.0.2 alpha */
+  --bg: #020a0a;
+  --bg-soft: #041414;
+  --panel: rgba(2, 22, 22, 0.84);
+
+  --line: rgba(0, 255, 200, 0.16);
+  --line-strong: rgba(0, 255, 200, 0.33);
+
+  --text: #eafffb;
+  --muted: rgba(169, 255, 241, 0.68);
+  --muted-soft: rgba(169, 255, 241, 0.52);
+
+  --accent: #00ffc8;
+  --accent-2: #44ffe2;
+  --accent-3: #7dff5f;
+  --accent-hover: #61ffe0;
+
+  --border: rgba(0, 255, 200, 0.22);
+  --border-strong: rgba(0, 255, 200, 0.44);
+  --glow: rgba(0, 255, 200, 0.38);
+
+  --radius: 18px;
+  --container: 1200px;
+  --shadow: 0 26px 70px rgba(0, 0, 0, 0.52);
+
+  --background: var(--bg);
+  --surface: rgba(255, 255, 255, 0.02);
+  --accent2: var(--accent-2);
+  --accent3: var(--accent-3);
+}

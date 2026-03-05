@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap');
+@import './theme.css';
+@import './effects.css';
+
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--sans-font);
+  color: var(--text);
+  background:
+    radial-gradient(120% 90% at 50% 10%, #063131 0%, #041c1c 46%, #020a0a 100%),
+    radial-gradient(900px 520px at 8% -10%, rgba(125,255,95,.12), transparent 55%),
+    #020a0a;
+  animation: flicker 12s linear infinite;
+}
+
+a {
+  color: var(--muted-soft);
+  text-decoration: none;
+  transition: color .25s ease, border-color .25s ease, background-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+a:hover { color: var(--muted); }
+
+button { font: inherit; }
+img { max-width: 100%; display: block; }
+.mono { font-family: var(--mono-font); letter-spacing: .06em; }
+
+.container { width: min(100%, var(--container)); margin: 0 auto; padding: 0 1rem; }
+.page-content { padding-top: 8rem; padding-bottom: 2.8rem; }
+.stack-xl { display: grid; gap: 1rem; }
+
+.panel {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(26, 5, 8, .72), rgba(12, 2, 8, .86)), var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.section-subtitle, .hero-tag, .brand-mark, .card-overline { font-family: var(--mono-font); letter-spacing: .06em; }
+.section-subtitle { color: var(--muted); text-transform: uppercase; }
+.lead { color: var(--muted); margin-bottom: 1rem; line-height: 1.75; }
+
+@media (max-width: 768px) {
+  .container { padding: 0 .75rem; }
+  .page-content { padding-top: 7.4rem; }
+}
+
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #021010; }
+::-webkit-scrollbar-thumb { background: #00bfa0; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #33ffd0; }
