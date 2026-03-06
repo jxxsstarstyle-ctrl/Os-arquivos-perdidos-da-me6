@@ -8,37 +8,7 @@
       name="description"
       content="Um universo digital onde memórias pulsam, sombras têm consciência e cada escolha molda o destino de um mundo que respira."
     />
-    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
-    <script>
-      (function ensureHashRouting() {
-        var base = '/Os-arquivos-perdidos-da-me6/';
-        var path = window.location.pathname;
-        var hash = window.location.hash;
-        var knownRoutes = ['Home', 'Read', 'Buy'];
-
-        // Canonical route format for this app is always: /repo/#/Route
-        if (!hash && path.indexOf(base) === 0) {
-          var subPath = path.slice(base.length).replace(/^\/+|\/+$/g, '');
-          if (subPath) {
-            var target = knownRoutes.indexOf(subPath) >= 0 ? subPath : 'Home';
-            window.location.replace(base + '#/' + target + window.location.search);
-            return;
-          }
-        }
-
-        // Normalize malformed hash variants like ##/Home, #Home, ###Read -> #/Home, #/Read
-        if (hash) {
-          var cleaned = hash.replace(/^#+/, '');
-          if (cleaned && cleaned.charAt(0) !== '/') {
-            cleaned = '/' + cleaned;
-          }
-          var canonicalHash = '#' + cleaned;
-          if (hash !== canonicalHash) {
-            window.location.replace(path + canonicalHash + window.location.search);
-          }
-        }
-      })();
-    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <div id="root"></div>

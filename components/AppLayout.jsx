@@ -5,8 +5,7 @@ import Footer from './Footer';
 
 export default function AppLayout() {
   return (
-    <div className="app-shell scanline-overlay">
-      <div className="deploy-proof" aria-label="build-marker">build 0.0.3v alfa</div>
+    <div className="app-shell">
       <Ticker />
       <Navbar />
       <main className="container page-content">
