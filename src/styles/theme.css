@@ -1,0 +1,35 @@
+
+:root {
+  --sans-font: 'Inter', system-ui, sans-serif;
+  --mono-font: 'Share Tech Mono', monospace;
+
+  /* Matte orange + summer pink */
+  --bg: #120909;
+  --bg-soft: #1a0e0e;
+  --panel: rgba(24, 12, 12, 0.84);
+
+  --line: rgba(214, 112, 74, 0.20);
+  --line-strong: rgba(255, 120, 84, 0.38);
+
+  --text: #fff4ef;
+  --muted: rgba(255, 192, 170, 0.74);
+  --muted-soft: rgba(255, 192, 170, 0.58);
+
+  --accent: #d87349;      /* laranja fosco */
+  --accent-2: #ff5f93;    /* rosa verão */
+  --accent-3: #ff8bb2;
+  --accent-hover: #f08c60;
+
+  --border: rgba(216, 115, 73, 0.30);
+  --border-strong: rgba(255, 110, 150, 0.48);
+  --glow: rgba(255, 110, 150, 0.30);
+
+  --radius: 18px;
+  --container: 1200px;
+  --shadow: 0 26px 72px rgba(0, 0, 0, 0.56);
+
+  --background: var(--bg);
+  --surface: rgba(255, 255, 255, 0.02);
+  --accent2: var(--accent-2);
+  --accent3: var(--accent-3);
+}

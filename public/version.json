@@ -1,0 +1,5 @@
+{
+  "version": "0.0.3v alfa",
+  "marker": "build 0.0.3v alfa",
+  "notes": "If this file is visible on /version.json but UI is old, deployed commit is not the expected one."
+}
